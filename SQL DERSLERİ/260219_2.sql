@@ -22,26 +22,26 @@ select*from Products where UnitsInStock>=10 and UnitsInStock<=15
 select*from Products where UnitsInStock between 10 and 15
 
 select*from Orders where OrderDate between '01.01.1996' and '12.31.1996'
---like=arama yapmak için kullanýlýr
+--like=arama yapmak iÃ§in kullanÃ½lÃ½r
 select*from Customers where ContactName like '%Maria%'
 
-select*from Customers where ContactName = 'Maria'--like ile % iþareti olmadan ayný anlama gelir
+select*from Customers where ContactName = 'Maria'--like ile % iÃ¾areti olmadan aynÃ½ anlama gelir
 
-select*from Customers where ContactName like 'Mar%'--ilk üç harfi mar olanlarý getirir
+select*from Customers where ContactName like 'Mar%'--ilk Ã¼Ã§ harfi mar olanlarÃ½ getirir
 
 select*from Orders where OrderDate like '%1996%'
 
-select*from Customers where ContactName like '%Mar'--son 3 harfi mar olanlarý getirir
+select*from Customers where ContactName like '%Mar'--son 3 harfi mar olanlarÃ½ getirir
 
---arama içinde_kullanýlmasý
+--arama iÃ§inde_kullanÃ½lmasÃ½
 
 select*from Products where ProductName like 'c_a%'--her bir alt tire bir bilinmeyen karaktere denk gelir
 
-select*from Products where ProductName like '_e_t%' -- 1. ve 3. harfi bilinmeyen 2. ve 4. harfi bilinen datalarýn getirilmesi
+select*from Products where ProductName like '_e_t%' -- 1. ve 3. harfi bilinmeyen 2. ve 4. harfi bilinen datalarÃ½n getirilmesi
 
---like için soru çözümü
+--like iÃ§in soru Ã§Ã¶zÃ¼mÃ¼
 --devam konular
---hazýr fonksiyonlar
+--hazÃ½r fonksiyonlar
 
 
 
